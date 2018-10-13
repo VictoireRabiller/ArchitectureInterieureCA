@@ -1,0 +1,267 @@
+/*/////////////////////////*/
+/*Mobile */
+
+html {
+	font-size: 62.5%; /*1rem = 10px*/
+}
+
+*{
+	box-sizing: border-box;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	margin: 0 auto;
+	line-height: 1.6;
+	font-size: 1.6rem;
+	color: #000000;
+
+
+}
+
+header{
+	font-family: 'Julius Sans One', sans-serif;
+	height: 130px;
+	padding: 0 2rem 5rem 2rem;
+	text-align: center;
+}
+
+nav{
+	position: relative;
+	text-align: center;
+}
+
+
+.container {
+	max-width: 1100px;
+	margin : 0 auto;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+header nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #2a8782;
+}
+header a{
+	display: block;
+	padding: 2px 0;
+}
+#index {
+	color: black;
+	text-align: left;
+}
+
+header nav ul li a:hover{
+	opacity:1;
+	background-color: rgba(255,255,255,0.15);
+
+}
+
+header nav:hover a {
+    opacity: 0.7;
+}
+
+img{
+	width: 150px;
+}
+
+
+
+#drop_down_menu, #drop_down_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#drop_down_menu {
+    text-align: center;
+}
+#drop_down_menu li {
+/*    display: inline-block;
+*/
+	display: block;
+}
+#drop_down_menu ul li {
+    display: inherit;
+}
+#drop_down_menu a {
+    text-decoration: none;
+    display: block;
+}
+#drop_down_menu ul {
+	display : none;
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    padding: 10px 100px;
+    z-index: 1000;
+}
+#drop_down_menu li:hover ul {
+    left: auto;
+}
+
+
+.logo{
+	width: 150px;
+	position: relative;
+
+}
+
+
+.first,.logo, .last{
+	display: inline-block;
+	font-family: 'Julius Sans One', 'Arial', sans-serif;
+	font-size: 40px;
+	height: 88px;
+	letter-spacing: 6px;
+	line-height: 88px;
+	opacity: 1;
+	text-align: center;
+	vertical-align: top;
+
+}
+
+
+main{
+    padding: 1rem 2rem;
+    width: 80%;
+	margin: 80px auto 0 auto;
+}
+
+h1{
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	font-size: 2.5rem;
+
+}
+
+/*****A PROPOS*****/
+
+p{
+	font-size: 1.5rem;
+}
+
+
+
+
+
+/****CONTACT***/
+
+.register{
+	text-align: left;
+	margin: 1rem auto;
+}
+
+label{
+    display: inline-block;
+}
+.register>label{
+	width: 175px;
+	vertical-align: top;
+}
+textarea{
+	border-radius: 5px;
+	border: 1px solid #929292;;
+}
+
+
+footer{
+	text-align: center;
+	margin-top: 5rem;
+	border: 1px dashed grey;
+	background-color: #dddddd;
+}
+
+
+
+/* Tablette */
+
+@media only screen and (min-width: 768px) {
+	
+
+
+	nav>ul{
+		display: flex;
+	}
+
+
+
+	nav>ul>li{
+		display: inline-block;
+		text-align: center;
+		margin: 10px auto;
+		width : 25%;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+
+	}
+
+	#drop_down_menu, #drop_down_menu ul {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	}
+	#drop_down_menu {
+	    text-align: center;
+	}
+	#drop_down_menu li {
+	    display: inline-block;
+	}
+	#drop_down_menu ul li {
+	    display: inherit;
+	}
+	#drop_down_menu a {
+	    text-decoration: none;
+	    display: block;
+	}
+	#drop_down_menu ul {
+		display: inline-block;
+	    position: relative;
+	    text-align: left;
+	    padding: 10px 20px;
+	    z-index: 1000;
+	}
+	#drop_down_menu li:hover ul {
+	    left: auto;
+	}
+
+
+	section #aPropos img, section #aPropos h1{
+		
+		display: inline-block;
+		text-align: left;
+
+	}
+
+	#facebook, #twitter, #linkedin{
+		display: inline-block;
+		width: 30%;
+		text-align: center;
+		font-size: 3rem;
+	}
+	
+	
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1025px) {
+
+#drop_down_menu ul {
+	    padding: 10px 100px;
+	}
+
+}
+

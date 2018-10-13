@@ -1,0 +1,67 @@
+<?php 
+include 'header.phtml'; 
+?>
+
+<main>
+
+<form method="post" action="processRegister.php">
+	<fieldset>
+		<legend><i class="fa fa-envelope"></i> Contact </legend>
+		<ul>
+			<li class="register">
+				<label for="society">Société : </label>
+				<input type="text" name="society" id="society">
+			</li>
+			<li class="register">
+				<label for="lastname">Nom : </label>
+				<input type="text" name="lastname" id="lastname">
+			
+			</li>
+			<li class="register">
+				<label for="firstname">Prénom : </label>
+				<input type="text" name="firstname" id="firstname">
+			</li>
+			<li class="register">
+				<label for="address"> Adresse :</label>
+				<input type="text" name="address" id="address">
+			</li>
+			<li class="register">
+				<label for="zipcode">CP : </label>
+				<input type="text" name="zipcode" id="zipcode">
+			</li>
+			<li class="register">
+				<label for="city">Ville : </label>
+				<input type="text" name="city" id="city">
+			</li>
+			<li class="register">
+				<label for="tel">Tel : </label>
+				<input type="text" name="tel" id="tel">
+			</li>
+			<li class="register">
+				<label for="email">Email : </label>
+				<input type="text" name="email" id="email">
+			</li>
+			<li class="register">
+				<label for="message">Votre Message : </label>
+				<textarea id="message" cols="20" rows="15"
+				></textarea>
+				
+
+
+			</li>
+
+		</ul>
+
+	</fieldset>
+
+		
+</form>
+<a href="mailto:charlotte_alain@hotmail.com">charlotte_alain@hotmail.com</a> 
+
+<a href="tel:+33661773219">06 61 77 32 19</a>
+	
+</main>
+
+<?php 
+include 'footer.phtml'; 
+?>
