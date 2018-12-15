@@ -36,6 +36,7 @@ header{
 nav{
 	position: relative;
 	text-align: center;
+	font-weight: bold;
 }
 
 
@@ -77,6 +78,23 @@ header nav:hover a {
 .logo img{
 	width: 150px;
 }
+
+div #index #archiInterieur{
+	width: 100%;
+	text-align: right;
+	
+}
+
+div #index #archiInterieur p{
+	
+	font-size:1.5rem;
+	font-style: italic;
+
+
+}
+
+
+
 
 
 
@@ -223,6 +241,9 @@ textarea{
 	border: 1px solid #929292;;
 }
 
+.mailTel{
+	text-align: center;
+}
 
 
 /******FOOTER******/
@@ -263,10 +284,23 @@ div#linkedin{
 		justify-content: space-between;
 
 	}
+	#index div{
+		display: inline-block;
+		width: 20%;
+		text-align: center;
+
+	}
+	#index div p{
+		font-size: 2rem;
+
+	}
+
+
+
 
 	#drop_down_menu, #drop_down_menu ul {
 	    padding: 0;
-	    margin: 0;
+	    margin: 0; 
 	    list-style: none;
 	}
 	#drop_down_menu {
@@ -330,6 +364,13 @@ div#linkedin{
 		text-align: right;
 	}
 
+/******contact******/
+	
+	.mailTel{
+		display: inline-block;
+		text-align: center;
+		width : 49%;
+	}
 
 
 
