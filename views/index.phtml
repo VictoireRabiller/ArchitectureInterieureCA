@@ -1,17 +1,29 @@
 <?php 
 include 'header.phtml'; ?>
 <main>
-	<iframe src="animation.php" width="100%" height="100%" name="myFrame" id="myFrame" onload="trigger();"></iframe>
-	<p>
-	Jquery semble tout indiqué (ou tout autre librairie JS) pour faire ce que tu souhaite.
+	<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img class="imgSlider" src="../views/img/slider/bourdet2.jpg" />
+    </li>
+    <li>
+      <img class="imgSlider" src="../views/img/slider/bousseau.jpg" />
+    </li>
+    <li>
+      <img class="imgSlider" src="../views/img/slider/bousseau3.jpg" />
+    </li>
+    <li>
+      <img class="imgSlider" src="../views/img/slider/bousseau2.jpg" />
+    </li>
+    <li>
+      <img class="imgSlider" src="../views/img/slider/vue2.jpg" />
+    </li>
+    <li>
+      <img class="imgSlider" src="../views/img/slider/bourdet3.jpg" />
+    </li>
+  </ul>
+</div>
 
-	Côté accessibilité, en fait c'est tout à fait faisable.
-
-	Tu écris avec document.write une div qui cache tout le site et une autre qui contient l'animation en question.
-
-	Si JS désactivé, tu es directement sur le site (pas de redirection donc, juste faire mumuse avec Jquery Smiley cligne )
-	</p>
-	<a href="animation.php">animation</a>
 </main>
 <?php
 include 'footer.phtml';

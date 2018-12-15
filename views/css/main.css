@@ -60,7 +60,8 @@ header a{
 }
 #index {
 	color: black;
-	text-align: left;
+	text-align: center;
+	padding-bottom: 2%;
 }
 
 header nav ul li a:hover{
@@ -73,7 +74,7 @@ header nav:hover a {
     opacity: 0.7;
 }
 
-img{
+.logo img{
 	width: 150px;
 }
 
@@ -115,6 +116,7 @@ img{
 .logo{
 	width: 150px;
 	position: relative;
+	text-align: center;
 
 }
 
@@ -146,14 +148,59 @@ h1{
 
 }
 
+.imgSlider{
+	height: 100px;
+}
+
+
+
+
+
+/***** PRESTATIONS*****/
+.imgPrestations{
+	display: inline-block;
+	width:23%;
+}
+
+.photosPrestations{
+	text-align: center;
+}
+
+
 /*****A PROPOS*****/
 
 p{
 	font-size: 1.5rem;
 }
 
+#signature{
+	font-weight: bold;
+	text-align: right;
+	padding-right: 10%;
+}
+#aPropos{
+	font-style: italic;
+    font-family: 'Shadows Into Light', cursive;
+}
+#aProposText,#aProposImg{
+	display: inline-block;
+}
+#aProposText{
+	width: 64%;
+	background-color:#000000;
+	color: #ffffff;
+	padding: 2%;
+	text-align: justify;
+}
+#aProposImg{
+	width: 35%;
+	vertical-align: top;
 
+}
+img#aProposImg{
+	width: 100%;
 
+}
 
 
 /****CONTACT***/
@@ -161,6 +208,7 @@ p{
 .register{
 	text-align: left;
 	margin: 1rem auto;
+	padding-left: 5%;
 }
 
 label{
@@ -176,12 +224,21 @@ textarea{
 }
 
 
-footer{
+
+/******FOOTER******/
+
+
+
+div#facebook{
 	text-align: center;
-	margin-top: 5rem;
-	border: 1px dashed grey;
-	background-color: #dddddd;
+
 }
+
+div#linkedin{
+	text-align: center;
+}
+
+
 
 
 
@@ -251,6 +308,32 @@ footer{
 		font-size: 3rem;
 	}
 	
+
+	/******FOOTER******/
+
+	footer{
+		text-align: center;
+		margin-top: 5rem;
+		border: 1px dashed grey;
+		background-color: #dddddd;
+	}
+	#licence>p{
+		margin: 0;
+	}
+
+	div#facebook{
+		text-align: left;
+
+	}
+
+	div#linkedin{
+		text-align: right;
+	}
+
+
+
+
+
 	
 }
 

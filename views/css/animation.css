@@ -16,6 +16,7 @@ main{
 img{
  	margin-top: 50vh; 
   	transform: translateY(-50%); 
+  	
 }
 
 
@@ -37,10 +38,12 @@ img{
 
 .charlotte{
 	text-align: center;
+	transform-origin: 50% 100%:
 }
 
 .alain{
 	text-align: left;
+	transform-origin: 50% 100%:
 }
 
 
@@ -88,23 +91,44 @@ span.charlotte {
   	}
 }
 /*
-#charlotteAlain{
-	animation-duration: 5s;	
+div.charlotteAlain{
+	animation-delay: 5s;	
 	animation-name: charlotteAlain;
+	animation-duration: 5s;
+	transform-origin: 50% 100%:
+
 }
 
 
 @keyframes charlotteAlain {
   	from {
-		margin-top: 50vh; 
-		transform: translateY(-50%); 
+		margin-top: 0%; 
  	
  	}
 
   	to {
-		margin-top: 50vh; 
-  		transform: translateY(-50%); 
+		margin-top: -25%; 
  	
   	}
 }
+
 */
+
+#charlotteAlain{
+	animation-delay: 7s;	
+	animation-name: charlotteAlain;
+	animation-duration: 5s;
+
+}
+
+@keyframes charlotteAlain {
+  	from {
+	margin-top: 0vh; 
+ 	
+ 	}
+
+  	to {
+	margin-top: -50vh; 
+
+  	}
+}

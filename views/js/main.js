@@ -2,9 +2,7 @@
 "use strict";
 console.log("main.js chargé");
 
-function trigger() {
-
-        alert("Chargé");
-
-}
+$(window).load(function() {
+    $('.flexslider').flexslider();
+});
 
