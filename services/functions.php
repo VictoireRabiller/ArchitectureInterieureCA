@@ -58,3 +58,24 @@ function getOneReaPro($id){
 
 	return $realisationPro;
 }
+
+function getReaListPart(){
+	$db=getDb();
+	$sql = "SELECT * FROM realisationsPart";
+	$statement = $db->prepare($sql);
+	$statement->execute();
+	$reaListPart = $statement->fetchAll(\PDO::FETCH_ASSOC);
+
+	return $reaListPart;
+}
+
+function getOneReaPart($id){
+	$db=getDb();
+
+	$sql = "SELECT * FROM `realisationsPart` WHERE id = '$id' ";
+	$statement = $db->prepare($sql);
+	$statement->execute();
+	$realisationPart = $statement->fetch(\PDO::FETCH_ASSOC);
+
+	return $realisationPart;
+}
