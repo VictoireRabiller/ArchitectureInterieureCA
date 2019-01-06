@@ -1,0 +1,31 @@
+<?php 
+include 'header.phtml'; 
+?>
+<main>
+
+	<section>
+		<table>
+			<tr>
+				<td> 
+					<img class="realisationPro" src="<?= $realisationPro["img1"] ?>"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="name"><?= $realisationPro["name"] ?></p>
+					<p class="productPrice"><?= $realisationPro["description"] ?></p>
+					
+				</td>
+			</tr>
+			<tr>
+				<?= $realisationPro["img2"] ?>
+			</tr>
+		</table>
+	</section>
+	
+
+</main>
+
+<?php 
+include 'footer.phtml'; 
+?>

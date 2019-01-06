@@ -36,3 +36,25 @@ function createContact($contact){
 
 	$statement->execute($contact);
 }
+
+
+function getReaListPro(){
+	$db=getDb();
+	$sql = "SELECT * FROM realisationsPro";
+	$statement = $db->prepare($sql);
+	$statement->execute();
+	$reaListPro = $statement->fetchAll(\PDO::FETCH_ASSOC);
+
+	return $reaListPro;
+}
+
+function getOneReaPro($id){
+	$db=getDb();
+
+	$sql = "SELECT * FROM `realisationsPro` WHERE id = '$id' ";
+	$statement = $db->prepare($sql);
+	$statement->execute();
+	$realisationPro = $statement->fetch(\PDO::FETCH_ASSOC);
+
+	return $realisationPro;
+}
