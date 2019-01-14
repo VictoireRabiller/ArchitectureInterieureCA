@@ -166,8 +166,37 @@ h1{
 
 }
 
-.imgSlider{
-	max-height: 450px;
+
+
+/*****CARROUSEL*****/
+
+h2{
+	color: #2a8782;
+}
+#carrousel{
+	text-align: center;
+}
+#carrousel>img{
+	border : 15px solid #ffffff;
+	border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px grey;
+    transform: rotate(-2deg);
+    margin-bottom: 2%;
+    width: 100%;
+
+}
+
+/*figcaption{
+	margin: 5rem auto;
+	font-size: 3rem;
+	font-weight: bold;
+	text-shadow: 0 0 5px grey;
+	text-align: center;
+	transform: rotate(-5deg);
+}*/
+
+#barreOutils, #pause{
+	display : none;
 }
 
 
@@ -209,6 +238,22 @@ h1{
 }
 
 
+.grayscale img {
+
+        filter: grayscale(100%);
+        transition: .3s ease-in-out;
+
+}
+
+.grayscale:hover img {
+        filter: grayscale(0);
+
+}
+
+td{
+	width: 60px;
+}
+
 
 /****réa Pro****/
 
@@ -249,8 +294,9 @@ img.realisationProImg{
 }
 
 .reaPart img{
-	width : 90%;
-	text-align: center;
+/*	width : 90%;
+*/	text-align: center;
+	height: 10rem;
 }
 
 
@@ -279,14 +325,14 @@ p{
 	display: inline-block;
 }
 #aProposText{
-	width: 64%;
+	width: 100%;
 	background-color:#000000;
 	color: #ffffff;
 	padding: 2%;
 	text-align: justify;
 }
 #aProposImg{
-	width: 35%;
+	width: 100%;
 	vertical-align: top;
 
 }
@@ -304,6 +350,13 @@ img#aProposImg{
 	padding-left: 5%;
 }
 
+input, select, textarea{
+	width: 90%;
+
+}
+.button-primary{
+	width: 30%;
+}
 label{
     display: inline-block;
 }
@@ -472,6 +525,15 @@ div#linkedin{
 		display: inline-block;
 		text-align: center;
 	}
+
+
+#aProposText{
+	width: 64%;
+	
+}
+#aProposImg{
+	width: 35%;
+	vertical-align: top;
 
 
 

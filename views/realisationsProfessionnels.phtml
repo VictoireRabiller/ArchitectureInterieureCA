@@ -6,12 +6,14 @@ include 'header.phtml';
 	<section>
 		<h2> Réalisations pour les professionnels </h2>
 		<?php foreach (array_reverse($reaListPro) as $reaPro): ?>
-		<article class="reaPro">
+		<a href = "realisationPro.php?id=<?= $reaPro["id"] ?>">
+		<article class="reaPro grayscale">
 			<img src="<?= $reaPro["img1"] ?>">	
 			<p class="name"><?= $reaPro["name"] ?></p>
 			<p class="description"><?= $reaPro["description"] ?></p>
 			<a class ='detailButton' href = "realisationPro.php?id=<?= $reaPro["id"] ?>"> Description </a>
 		</article>
+		</a>
 		<?php endforeach; ?>
 	</section>
 

@@ -5,12 +5,14 @@ include 'header.phtml';
 	<section>
 		<h2> Réalisations pour les Particuliers </h2>
 		<?php foreach (array_reverse($reaListPart) as $reaPart): ?>
-		<article class="reaPart">
+		<a href = "realisationPro.php?id=<?= $reaPro["id"] ?>">		
+		<article class="reaPart grayscale">
 			<img src="<?= $reaPart["img1"] ?>">	
 			<p class="name"><?= $reaPart["name"] ?></p>
 			<p class="description"><?= $reaPart["description"] ?></p>
 			<a class ='detailButton' href = "realisationPart.php?id=<?= $reaPart["id"] ?>"> Description </a>
 		</article>
+		</a>
 		<?php endforeach; ?>
 	</section>
 </main>
