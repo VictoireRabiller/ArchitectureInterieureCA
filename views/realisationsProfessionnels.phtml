@@ -6,7 +6,7 @@ include 'header.phtml';
 	<section>
 		<h2> Réalisations pour les professionnels </h2>
 		<?php foreach (array_reverse($reaListPro) as $reaPro): ?>
-		<a href = "realisationPro.php?id=<?= $reaPro["id"] ?>">
+		
 		<article class="reaPro grayscale">
 			<img src="<?= $reaPro["img1"] ?>">	
 			<h5 class="name"><?= $reaPro["name"] ?></h5>

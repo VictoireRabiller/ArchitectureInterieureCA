@@ -50,7 +50,7 @@ img{
 
 
 span.alain {
-	animation-duration: 5s;
+	animation-duration: 3s;
   	animation-name: alain;
 
 
@@ -73,7 +73,7 @@ span.alain {
 
 
 span.charlotte {
-	animation-duration: 5s;	
+	animation-duration: 3s;	
 	animation-name: charlotte;
 
 
@@ -116,7 +116,7 @@ div.charlotteAlain{
 */
 
 #charlotteAlain{
-	animation-delay: 6s;	
+	animation-delay: 3s;	
 	animation-name: charlotteAlain;
 	animation-duration: 60s;
 
@@ -128,7 +128,7 @@ div.charlotteAlain{
  	
  	}
 
-  	10% {
+  	5% {
 		
 		margin-top: -40vh; 
 		transform: scale(0.7); 

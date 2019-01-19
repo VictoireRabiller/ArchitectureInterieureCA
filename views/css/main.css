@@ -180,7 +180,7 @@ h2{
 	border : 15px solid #ffffff;
 	border-radius: 5px;
     box-shadow: 2px 2px 2px 2px grey;
-    transform: rotate(-2deg);
+   /* transform: rotate(-2deg);*/
     margin-bottom: 2%;
     width: 100%;
 
@@ -263,8 +263,9 @@ td{
 }
 
 .reaPro img{
-	width : 90%;
+/*	width : 90%;*/
 	text-align: center;
+	height: 15rem;
 }
 
 .detailButton{
@@ -305,6 +306,9 @@ img.realisationPartImg{
 	height: 37px;
 }
 
+.fa-chevron-left,.fa-chevron-right{
+	color: grey;
+}
 
 /*****A PROPOS*****/
 
