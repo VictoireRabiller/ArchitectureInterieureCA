@@ -8,10 +8,10 @@ include 'header.phtml';
 		<?php foreach (array_reverse($reaListPro) as $reaPro): ?>
 		
 		<article class="reaPro grayscale">
+			<a href = "realisationPro.php?id=<?= $reaPro["id"] ?>"> 
 			<img src="<?= $reaPro["img1"] ?>">	
-			<h5 class="name"><?= $reaPro["name"] ?></h5>
-			<!-- <p class="description"><?= $reaPro["description"] ?></p> -->
-			<a class ='detailButton' href = "realisationPro.php?id=<?= $reaPro["id"] ?>"> Description </a>
+			<h6 class="name"><?= $reaPro["name"] ?></h6>
+			</a>
 		</article>
 		</a>
 		<?php endforeach; ?>

@@ -7,10 +7,13 @@ include 'header.phtml';
 		<?php foreach (array_reverse($reaListPart) as $reaPart): ?>
 	
 		<article class="reaPart grayscale">
+			<a href = "realisationPart.php?id=<?= $reaPart["id"] ?>"> 
 			<img src="<?= $reaPart["img1"] ?>">	
-			<h6 class="name"><?= $reaPart["name"] ?></h6>
+			<h6 class="name reaPartName"><?= $reaPart["name"] ?></h6>
 			
-			<a class ='detailButton' href = "realisationPart.php?id=<?= $reaPart["id"] ?>"> Description </a>
+
+			</a>
+			
 		</article>
 		</a>
 		<?php endforeach; ?>
