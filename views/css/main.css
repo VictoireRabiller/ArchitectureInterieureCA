@@ -294,6 +294,19 @@ img.realisationProImg{
 	height: 37px;
 }
 
+/*.realisationProBigOne{
+	position: absolute;
+
+}
+
+.realisationProImg{
+	position: absolute;
+
+	}*/
+
+
+
+
 .fa-chevron-left,.fa-chevron-right{
 	color: grey;
 }
@@ -532,6 +545,9 @@ div#linkedin{
 	.reaPart img,.reaPro img{
 		max-height: 125px;
 	}
+
+	
+
 	/****a propos****/
 
 	#aProposText{
@@ -542,6 +558,10 @@ div#linkedin{
 		width: 35%;
 		vertical-align: top;
 
+	}
+	td.center {
+		text-align: center;
+	    vertical-align: middle;
 	}
 
 /******contact******/

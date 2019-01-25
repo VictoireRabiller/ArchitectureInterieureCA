@@ -6,38 +6,149 @@ include 'header.phtml';
 	<section>
 		<table>
 			<tr>
-				<td colspan="17"> 
+				<td>
+					<i class="fas fa-chevron-left"></i>
+				</td>
+				<td colspan="15" class="center"> 
 					<img class="realisationProBigOne" src="<?= $realisationPro["img1"] ?>"> 
+				</td>
+				<td>
+					<i class="fas fa-chevron-right"></i>
 				</td>
 			</tr>
 
 			<tr>
-				<td class="grayscale">
-					<img class="realisationProImg" src="<?= $realisationPro["img1"] ?>"> 
+				<td class="grayscale center">
+					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img1"] ?>"> 
 				</td>
-				<td class="grayscale">
-					<img class="realisationProImg" src="<?= $realisationPro["img2"] ?>"> </td>
-				<td class="grayscale">
-					<img class="realisationProImg" src="<?= $realisationPro["img3"] ?>"></td> 
-				<td class="grayscale">
-					<img class="realisationProImg" src="<?= $realisationPro["img4"] ?>"></td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img5"] ?>"> </td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img6"] ?>"> </td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img7"] ?>"> </td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img8"] ?>"> </td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img9"] ?>"> </td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img10"] ?>"></td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img11"] ?>"></td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img12"] ?>"></td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img13"] ?>"> </td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img14"] ?>"></td>
+				<td class="grayscale center">
+					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img2"] ?>"> </td>
+				<td class="grayscale center">
+					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img3"] ?>"></td> 
+				<td class="grayscale center">
+					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img4"] ?>"></td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img5"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img5'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img6"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img6'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img7"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img7'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img8"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img8'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img9"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img9'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img10"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img10'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img11"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img11'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img12"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img12'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img13"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img13'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img14"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img14'] ?>">
+				<?php
+					}
+				?>
+				</td>
 			</tr>
 			<tr>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img15"] ?>"> </td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img16"] ?>"> </td>
-				<td class="grayscale"><img class="realisationProImg" src="<?= $realisationPro["img17"] ?>"> </td>
-			
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img15"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img15'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img16"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img16'] ?>">
+				<?php
+					}
+				?>
+				</td>
+				<td class="grayscale center">
+				<?php 
+					if ($realisationPro["img17"]!= null){
+				?>
+						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img17'] ?>">
+				<?php
+					}
+				?>
+				</td>
 				
+			
+			
 			</tr>
 
 			<tr>
