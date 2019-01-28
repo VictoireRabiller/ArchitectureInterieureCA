@@ -76,7 +76,7 @@ header nav:hover a {
 }
 
 .logo img{
-	width: 150px;
+	width: 75%;
 }
 
 div #index #archiInterieur{
@@ -304,12 +304,110 @@ img.realisationProImg{
 
 	}*/
 
+#pause{
+	display : none;
+}
 
 
 
 .fa-chevron-left,.fa-chevron-right{
 	color: grey;
 }
+
+
+
+
+
+section#heightRea{
+/*		height: 250rem;
+*/	}
+
+.clear{
+	clear: both;
+	display: block;
+	
+}
+
+	div.bas{
+		display: inline-block;
+	}
+
+   	#diaporama { 
+		position:static;
+		margin: 0 auto;
+		/*width:500px; */
+		/*left:25%; */
+		/*margin-left:-100px; */
+		/*height:500px; */
+		/*top:25%; */
+		/*margin-top:-100px;*/
+
+    }
+    #diaporama div div {
+		width:60px; 
+		height:38px; 
+		float:left; 
+
+
+    }	
+    #diaporama div img + .grande {  /* On utilise ici le sélecteur de frère adjacent */
+        display:none;           /* pour rendre tous nos agrandissements invisibles. */
+    }
+    #diaporama div img:hover + .grande {
+        display:inline;         /* Au survol de la souris, l'image adjacente à la miniature, notre agrandissement, devient visible */
+        position:absolute;      /* et on le place au centre de la page pour qu'il se loge au centre du diaporama. */
+        width:700px;    
+        left:33%;
+        margin-left:-150px; /* On centre l'agrandissement par rapport à sa propre largeur. */
+        height:520px;
+        top:60%;
+        margin-top:-200px;  /* On centre l'agrandissement par rapport à sa propre hauteur. */
+    }
+    
+    #diaporama img { 
+		width:59px; 
+		height:37px; 
+    }
+
+    #diaporama .bas { 
+		/*width:500px; 
+		height:50px;*/
+    }
+   
+    #diaporama .centre { 
+		z-index: 300;
+		float:left;
+		width:694px; 
+		height:518px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*****A PROPOS*****/
 
@@ -413,6 +511,133 @@ div#linkedin{
 
 @media only screen and (min-width: 768px) {
 	
+	#charlotteAlain{
+		/*display: none;*/
+		position : fixed;
+		z-index: 9999;
+		background : url('../views/img/white.jpg') repeat;
+		top : 0px;
+		left : 0px;
+		height : 100%;
+		width : 100%;
+		text-align: center;
+	}
+
+	#anim{
+		text-align: center;
+		height: 100%;
+		display: inline-block;
+
+	}
+
+	#charlotteAlain img{
+	 	margin-top: 50vh; 
+	  	transform: translateY(-50%); 
+	  	width: 75%;
+	  	
+	}
+
+
+
+
+	.charlotte,
+	.alain{
+		display: inline-block;
+		width: 30%;
+		font-family: 'Julius Sans One', 'Arial', sans-serif;
+		font-size: 40px;
+		text-transform: uppercase;
+		vertical-align: middle;
+		text-align: center;
+		transform: translateY(-50%); 
+		padding-top: 25vh; 	
+
+	}
+
+	.charlotte{
+		text-align: center;
+		transform-origin: 50% 100%:
+	}
+
+	.alain{
+		text-align: left;
+		transform-origin: 50% 100%:
+	}
+
+
+
+	span.alain {
+		animation-duration: 3s;
+	  	animation-name: alain;
+
+
+	}
+
+	@keyframes alain {
+	  	from {
+			margin-left: 100%;
+			opacity: 0.5;		
+
+	 	}
+
+	  	to {
+	    	opacity: 1;
+	    	margin-left: 0%;		
+
+	  	}
+	}
+
+
+
+	span.charlotte {
+		animation-duration: 3s;	
+		animation-name: charlotte;
+
+
+	}
+
+	@keyframes charlotte {
+	  	from {
+			margin-right: 100%;		
+			opacity: 0.5;
+	 	}
+
+	  	to {
+	    	opacity: 1;
+	    	margin-right: 0%;		
+
+	  	}
+	}
+	
+	#charlotteAlain{
+		animation-delay: 3s;	
+		animation-name: charlotteAlain;
+		animation-duration: 60s;
+
+	}
+
+	@keyframes charlotteAlain {
+	  	from {
+			margin-top: 0vh; 
+	 	
+	 	}
+
+	  	5% {
+			
+			margin-top: -40vh; 
+			transform: scale(0.7); 
+	  	}
+	  	
+
+		to {
+
+			margin-top: -40vh; 
+			transform: scale(0.7); 
+
+		
+		}
+	}
+
 
 
 	nav>ul{
@@ -548,6 +773,7 @@ div#linkedin{
 
 	
 
+
 	/****a propos****/
 
 	#aProposText{
@@ -559,9 +785,8 @@ div#linkedin{
 		vertical-align: top;
 
 	}
-	td.center {
+	.center {
 		text-align: center;
-	    vertical-align: middle;
 	}
 
 /******contact******/

@@ -3,175 +3,172 @@ include 'header.phtml';
 ?>
 <main>
 
-	<section>
-		<table>
-			<tr>
-				<td>
-					<i class="fas fa-chevron-left"></i>
-				</td>
-				<td colspan="15" class="center">
-					<img width="700px" class="realisationPartBigOne" src="<?= $realisationPart["img1"] ?>"> 
-				</td>
-				<td>
-					<i class="fas fa-chevron-right"></i>
-				</td>
-			</tr>
-			<tr>
+	<section id="heightRea">
+		<div id="diaporama">
+			<!-- <div>
+				<i class="fas fa-chevron-left"></i>
+			</div> -->
+			<div class="centre" >
 				
-				<td class="grayscale center">
-					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img1"] ?>"> 
-				</td>
-				<td class="grayscale center">
-					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img2"] ?>"> </td>
-				<td class="grayscale center">
-					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img3"] ?>"></td> 
-				<td class="grayscale center">
-					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img4"] ?>"></td>
-				<td class="grayscale center">
+			</div>
+			<!-- <div>
+				<i class="fas fa-chevron-right"></i>
+			</div> -->
+		
+			<div class="bas" >
+				
+				<div class="grayscale center">
+					<img class=" realisationPartImg hoverBigView" src="<?= $realisationPart["img1"] ?>"/> <img class="grande" src="<?= $realisationPart["img1"] ?>"/> 
+				</div>
+				<div class="grayscale center">
+					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img2"] ?>"/> 
+					<img class="grande" src="<?= $realisationPart["img2"] ?>"/> 
+				</div>
+				<div class="grayscale center">
+					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img3"] ?>"/><img class="grande" src="<?= $realisationPart["img3"] ?>"/>
+				</div> 
+				<div class="grayscale center">
+					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img4"] ?>"/><img class="grande" src="<?= $realisationPart["img4"] ?>"/>
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img5"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img5'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img5'] ?>"/><img class="grande" src="<?= $realisationPart['img5'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img6"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img6'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img6'] ?>"/><img class="grande" src="<?= $realisationPart['img6'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img7"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img7'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img7'] ?>"/><img class="grande" src="<?= $realisationPart['img7'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img8"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img8'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img8'] ?>"/><img class="grande" src="<?= $realisationPart['img8'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img9"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img9'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img9'] ?>"/><img class="grande" src="<?= $realisationPart['img9'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img10"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img10'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img10'] ?>"/><img class="grande" src="<?= $realisationPart['img10'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img11"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img11'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img11'] ?>"/><img class="grande" src="<?= $realisationPart['img11'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img12"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img12'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img12'] ?>"/><img class="grande" src="<?= $realisationPart['img12'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img13"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img13'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img13'] ?>"/><img class="grande" src="<?= $realisationPart['img13'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img14"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img14'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img14'] ?>"/><img class="grande" src="<?= $realisationPart['img14'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-			</tr>
-			<tr>
-				<td class="grayscale center">
+				</div>
+			
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img15"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img15'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img15'] ?>"/><img class="grande" src="<?= $realisationPart['img15'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img16"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img16'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img16'] ?>"/><img class="grande" src="<?= $realisationPart['img16'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img17"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img17'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img17'] ?>"/><img class="grande" src="<?= $realisationPart['img17'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-				<td class="grayscale center">
+				</div>
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPart["img18"]!= null){
 				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img18'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img18'] ?>"/><img class="grande" src="<?= $realisationPart['img18'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				
-			
-			</tr>
-			<tr>
-				<td colspan="17"> 
+			</div>
+
+
+				<div > 
 					<h5 class="name"><?= $realisationPart["name"] ?></h5>
 					<p class="description"><?= $realisationPart["description"] ?></p>
 					<p class="description"><?= $realisationPart["description2"] ?></p>
 					<p class="description"><?= $realisationPart["description3"] ?></p>
-				</td>
-				
-					
-					
-				
-			</tr>
-
-		</table>
+				</div>
+				<div class="clear"></div>
+		
 	</section>
 	
 

@@ -13,24 +13,37 @@ function getDb (){
 	return $db;
 }
 
+
+
+function Rec($text){
+		$text = htmlspecialchars(trim($text), ENT_QUOTES);
+		if (1 === get_magic_quotes_gpc())
+		{
+			$text = stripslashes($text);
+		}
+ 
+		$text = nl2br($text);
+		return $text;
+};
+
+function IsEmail($email){
+	$value = preg_match('/^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9_](?:[a-zA-Z0-9_\-](?!\.)){0,61}[a-zA-Z0-9_-]?\.)+[a-zA-Z0-9_](?:[a-zA-Z0-9_\-](?!$)){0,61}[a-zA-Z0-9_]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/', $email);
+	return (($value === 0) || ($value === false)) ? false : true;
+}
+ 
+
 function createContact($contact){
 
 	$db=getDb();
-
-	if (empty($contact['email'])) {
-			throw new Exception("Email empty");
-		}
-
-	if (empty($contact['lastname'])) {
-			throw new Exception("lastname empty");
-	}
-
+	
 
 	$sql = "
 			INSERT INTO contact
 			(id, civility, lastname, firstname,  tel, email, message)
 			VALUES (NULL, :civility, :lastname, :firstname, :tel, :email, :message)
 			";
+	
+	
 
 	$statement = $db->prepare($sql);
 
@@ -79,3 +92,5 @@ function getOneReaPart($id){
 
 	return $realisationPart;
 }
+
+

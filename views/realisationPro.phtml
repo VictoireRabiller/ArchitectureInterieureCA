@@ -4,12 +4,48 @@ include 'header.phtml';
 <main>
 
 	<section>
+
+		<div id="barreOutils">
+				
+
+				<button id="backward"><i class="fas fa-backward"></i></i></button>
+				<button id="play"><i class="fas fa-play"></i></button>
+				<button id="pause"><i class="fas fa-pause"></i></button>
+				<button id="forward"><i class="fas fa-forward"></i></button>
+		
+			</div>
+
+			<div id="carrousel">
+  
+			        		<img>
+				
+			</div>
+
+
+
+
+
+
+
+
+
+
+<div style="height:400px"></div>
+
+
+
+
+
+
+
+
+
 		<table>
 			<tr>
 				<td>
 					<i class="fas fa-chevron-left"></i>
 				</td>
-				<td colspan="15" class="center"> 
+				<div colspan="15" class="center"> 
 					<img class="realisationProBigOne" src="<?= $realisationPro["img1"] ?>"> 
 				</td>
 				<td>
@@ -18,16 +54,16 @@ include 'header.phtml';
 			</tr>
 
 			<tr>
-				<td class="grayscale center">
+				<div class="grayscale center">
 					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img1"] ?>"> 
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img2"] ?>"> </td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img3"] ?>"></td> 
-				<td class="grayscale center">
+				<div class="grayscale center">
 					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img4"] ?>"></td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img5"]!= null){
 				?>
@@ -36,7 +72,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img6"]!= null){
 				?>
@@ -45,7 +81,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img7"]!= null){
 				?>
@@ -54,7 +90,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img8"]!= null){
 				?>
@@ -63,7 +99,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img9"]!= null){
 				?>
@@ -72,7 +108,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img10"]!= null){
 				?>
@@ -81,7 +117,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img11"]!= null){
 				?>
@@ -90,7 +126,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img12"]!= null){
 				?>
@@ -99,7 +135,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img13"]!= null){
 				?>
@@ -108,7 +144,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img14"]!= null){
 				?>
@@ -119,7 +155,7 @@ include 'header.phtml';
 				</td>
 			</tr>
 			<tr>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img15"]!= null){
 				?>
@@ -128,7 +164,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img16"]!= null){
 				?>
@@ -137,7 +173,7 @@ include 'header.phtml';
 					}
 				?>
 				</td>
-				<td class="grayscale center">
+				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img17"]!= null){
 				?>
@@ -152,7 +188,7 @@ include 'header.phtml';
 			</tr>
 
 			<tr>
-				<td colspan="17">
+				<div colspan="17">
 					<h5 class="name"><?= $realisationPro["name"] ?></h5>
 					<p class="productPrice"><?= $realisationPro["description"] ?></p>
 					<p class="productPrice"><?= $realisationPro["description2"] ?></p>
