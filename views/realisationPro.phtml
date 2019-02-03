@@ -3,211 +3,172 @@ include 'header.phtml';
 ?>
 <main>
 
-	<section>
 
-		<div id="barreOutils">
-				
-
-				<button id="backward"><i class="fas fa-backward"></i></i></button>
-				<button id="play"><i class="fas fa-play"></i></button>
-				<button id="pause"><i class="fas fa-pause"></i></button>
-				<button id="forward"><i class="fas fa-forward"></i></button>
+	<section id="heightRea">
+		<div id="diaporama">
+			<!-- <div>
+				<i class="fas fa-chevron-left"></i>
+			</div> -->
+			<div class="centre" >
+				<h4 class="imageReaHover">Touchez une image miniature pour qu'elle s'agrandisse</h4>
+			</div>
+			<!-- <div>
+				<i class="fas fa-chevron-right"></i>
+			</div> -->
 		
-			</div>
-
-			<div id="carrousel">
-  
-			        		<img>
+			<div class="bas" >
 				
-			</div>
-
-
-
-
-
-
-
-
-
-
-<div style="height:400px"></div>
-
-
-
-
-
-
-
-
-
-		<table>
-			<tr>
-				<td>
-					<i class="fas fa-chevron-left"></i>
-				</td>
-				<div colspan="15" class="center"> 
-					<img class="realisationProBigOne" src="<?= $realisationPro["img1"] ?>"> 
-				</td>
-				<td>
-					<i class="fas fa-chevron-right"></i>
-				</td>
-			</tr>
-
-			<tr>
 				<div class="grayscale center">
-					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img1"] ?>"> 
-				</td>
+					<img class=" realisationPartImg hoverBigView" src="<?= $realisationPro["img1"] ?>"/> <img class="grande" src="<?= $realisationPro["img1"] ?>"/> 
+				</div>
 				<div class="grayscale center">
-					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img2"] ?>"> </td>
+					<img class="realisationPartImg hoverBigView" src="<?= $realisationPro["img2"] ?>"/> 
+					<img class="grande" src="<?= $realisationPro["img2"] ?>"/> 
+				</div>
 				<div class="grayscale center">
-					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img3"] ?>"></td> 
+					<img class="realisationPartImg hoverBigView" src="<?= $realisationPro["img3"] ?>"/><img class="grande" src="<?= $realisationPro["img3"] ?>"/>
+				</div> 
 				<div class="grayscale center">
-					<img class="realisationProImg hoverBigView" src="<?= $realisationPro["img4"] ?>"></td>
+					<img class="realisationPartImg hoverBigView" src="<?= $realisationPro["img4"] ?>"/><img class="grande" src="<?= $realisationPro["img4"] ?>"/>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img5"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img5'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img5'] ?>"/><img class="grande" src="<?= $realisationPro['img5'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img6"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img6'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img6'] ?>"/><img class="grande" src="<?= $realisationPro['img6'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img7"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img7'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img7'] ?>"/><img class="grande" src="<?= $realisationPro['img7'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img8"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img8'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img8'] ?>"/><img class="grande" src="<?= $realisationPro['img8'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img9"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img9'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img9'] ?>"/><img class="grande" src="<?= $realisationPro['img9'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img10"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img10'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img10'] ?>"/><img class="grande" src="<?= $realisationPro['img10'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img11"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img11'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img11'] ?>"/><img class="grande" src="<?= $realisationPro['img11'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img12"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img12'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img12'] ?>"/><img class="grande" src="<?= $realisationPro['img12'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img13"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img13'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img13'] ?>"/><img class="grande" src="<?= $realisationPro['img13'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img14"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img14'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img14'] ?>"/><img class="grande" src="<?= $realisationPro['img14'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
-			</tr>
-			<tr>
+				</div>
+			
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img15"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img15'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img15'] ?>"/><img class="grande" src="<?= $realisationPro['img15'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img16"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img16'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img16'] ?>"/><img class="grande" src="<?= $realisationPro['img16'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				<div class="grayscale center">
 				<?php 
 					if ($realisationPro["img17"]!= null){
 				?>
-						<img class="realisationProImg hoverBigView" src="<?= $realisationPro['img17'] ?>">
+						<img class="realisationPartImg hoverBigView" src="<?= $realisationPro['img17'] ?>"/><img class="grande" src="<?= $realisationPro['img17'] ?>"/>
 				<?php
 					}
 				?>
-				</td>
+				</div>
 				
-			
-			
-			</tr>
+				
+			</div>
 
-			<tr>
-				<div colspan="17">
+
+				<div > 
 					<h5 class="name"><?= $realisationPro["name"] ?></h5>
-					<p class="productPrice"><?= $realisationPro["description"] ?></p>
-					<p class="productPrice"><?= $realisationPro["description2"] ?></p>
-					<p class="productPrice"><?= $realisationPro["description3"] ?></p>
-					
-				</td>
-			</tr>
-
-
-
-
-
-
-
-		</table>
+					<p class="description"><?= $realisationPro["description"] ?></p>
+					<p class="description"><?= $realisationPro["description2"] ?></p>
+					<p class="description"><?= $realisationPro["description3"] ?></p>
+				</div>
+				<div class="clear"></div>
+		
+	</section>
+	
 	</section>
 	
 
 </main>
+
 
 <?php 
 include 'footer.phtml'; 

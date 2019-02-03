@@ -4,13 +4,19 @@ include 'header.phtml';
 
 <main>
 
-<form method="post" action="processContact.php">
+<form method="post" action="contact.php">
+	 
+<?php if (!empty($_POST['submit'])): echo $messageenvoi ;?>
+
+<?php endif; ?>
+
+
 	<fieldset>
 		<legend><i class="fa fa-envelope"></i> Contact </legend>
 		<ul>
 			<li class="register">
 				<label for="civility">Civilité : </label>
-				<select name="civility" id="civility">
+				<select name="civility" id="civility" value="<?php echo $civility ?>">
 					<option></option>
 					<option value="madame">Madame</option>
 					<option value="monsieur">Monsieur</option>
@@ -20,34 +26,37 @@ include 'header.phtml';
 			</li>
 			<li class="register">
 				<label for="lastname">Nom : </label>
-				<input type="text" name="lastname" id="lastname">
+				<input type="text" name="lastname" id="lastname" value="<?php echo $nom ?>"><?php echo $erreurnom ?>
 			
 			</li>
 			<li class="register">
 				<label for="firstname">Prénom : </label>
-				<input type="text" name="firstname" id="firstname">
+				<input type="text" name="firstname" id="firstname"  value="<?php echo $prenom ?>">
 			</li>
 			<li class="register">
 				<label for="tel">Tel : </label>
-				<input type="text" name="tel" id="tel">
+				<input type="text" name="tel" id="tel" value="<?php echo $tel ?>">
 			</li>
 			<li class="register">
 				<label for="email">Email : </label>
-				<input type="text" name="email" id="email">
+				<input type="text" name="email" id="email"value="<?php echo $email ?>"><?php echo $erreuremail ?>
 			</li>
 			<li class="register">
 				<label for="message">Votre Message : </label>
 				<textarea name="message" id="message" cols="20" rows="15"
-				></textarea>
+				></textarea><?php echo $erreurmessage ?>
 			</li>
 
 		</ul>
 
 	</fieldset>
-	<input class="button button-primary" type="submit" value="Envoyer">
-	<a class="button button-cancel" href="contact.php">Annuler</a>
-		
+	<input class="button " type="submit" name="submit" value="Envoyer">
+	<input class="button button-cancel" type="reset" value="Annuler"/>
+	<!-- <a class="button button-cancel" href="contact.php">Annuler</a>
+ -->		
+
 </form>
+
 <section>
 	<h3>Me contacter par mail ou par téléphone :</h3>
 

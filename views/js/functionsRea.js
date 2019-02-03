@@ -1,4 +1,5 @@
 'use strict';   
+console.log("functionsRea.js chargé");
 
 
 
@@ -25,13 +26,6 @@ function playNextImage() {
 
 
 
-function playImages(){
-	
-	app.intervalID = setInterval(playNextImage, 3000);
-
-}
-
-
 
  
 
@@ -51,6 +45,13 @@ function playPreviousImage() {
 }
 
 
+
+
+function playImages(){
+	
+	app.intervalID = setInterval(playNextImage, 2000);
+
+}
 
 
 

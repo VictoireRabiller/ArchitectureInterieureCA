@@ -44,8 +44,7 @@ $err_formulaire = false; // sert pour remplir le formulaire en cas d'erreur si b
 
 
 
-if (isset($_POST['envoi']))
-{
+if (isset($_POST['Envoyer'])){
 	if (($contact['lastname'] != '') && ($contact['email'] != '') && ($contact['message'] != '')){
 		// les 4 variables sont remplies, on génère puis envoie le mail
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -83,19 +82,19 @@ if (isset($_POST['envoi']))
 				$num_emails++;
 		}
  
-		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
-		{
-			echo '<p>'.$message_envoye.'</p>';
-		}
-		else
-		{
-			echo '<p>'.$message_non_envoye.'</p>';
-		};
+		// if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
+		// {
+		// 	echo '<p>'.$message_envoye.'</p>';
+		// }
+		// else
+		// {
+		// 	echo '<p>'.$message_non_envoye.'</p>';
+		// };
 	}
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.' <a href="contact.html">Retour au formulaire</a></p>'."\n";
+		echo '<p>'.$message_formulaire_invalide.' <a href="contact.php">Retour au formulaire</a></p>'."\n";
 	};
 }; 
 

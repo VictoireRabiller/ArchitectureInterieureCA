@@ -1,13 +1,14 @@
 'use strict';   
+console.log("datarea.js chargé");
 
 
 var imageListRea = [
 	{
-		file: '../views/img/slider/bt2.jpg',
+		file: '<?= $realisationPro["img1"] ?>',
 		// figcaption: "a"
 	},
 	{
-		file: '../views/img/slider/bs.jpg',
+		file: '<?= $realisationPro["img2"] ?>',
 		// figcaption : "b"
 	},
 	{

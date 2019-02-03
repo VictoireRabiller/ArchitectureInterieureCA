@@ -1,4 +1,5 @@
 'use strict';   
+console.log("rea.js chargé");
 
 var app = {}; //app pour application
 
@@ -40,7 +41,7 @@ function main () {
 	$( buttonPlay ).click(function() {
 	 
 	  	$( "#pause" ).toggle() && buttonPlay.toggle() ;
-	  	// console.log(imageList);
+	  	// console.log(imageListRea);
 		playImages();
 	
 	});
