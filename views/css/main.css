@@ -464,10 +464,10 @@ div#linkedin{
 
 
 
-	.alain{
+	.alainDiv{
 		display: inline-block;
 	
-		width: 49%;
+		width: 30%;
 		font-family: 'Julius Sans One', 'Arial', sans-serif;
 		font-size: 40px;
 		text-transform: uppercase;
@@ -478,10 +478,10 @@ div#linkedin{
 
 	}
 
-		.charlotte{
+		.charlotteDiv{
 		display: inline-block;
 	
-		width: 49%;
+		width: 30%;
 		font-family: 'Julius Sans One', 'Arial', sans-serif;
 		font-size: 40px;
 		text-transform: uppercase;
