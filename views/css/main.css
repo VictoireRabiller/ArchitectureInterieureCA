@@ -62,7 +62,6 @@ header a{
 #index {
 	color: black;
 	text-align: center;
-	padding-bottom: 2%;
 }
 
 header nav ul li a:hover{
@@ -76,7 +75,21 @@ header nav:hover a {
 }
 
 .logo img{
-	width: 75%;
+	width: 50%;
+	vertical-align: middle;
+}
+
+
+.logo{
+	width: 32%;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+
+}
+.alainDiv,.charlotteDiv{
+	display: inline-block;
+	width:32%; 
 }
 
 div #index #archiInterieur{
@@ -93,9 +106,13 @@ div #index #archiInterieur p{
 
 }
 
+.charlotte {
+	transform: translateX(200px);
+}
 
-
-
+.alain{
+	transform: translateX(200px);
+}
 
 
 #drop_down_menu, #drop_down_menu ul {
@@ -131,26 +148,8 @@ div #index #archiInterieur p{
 }
 
 
-.logo{
-	width: 150px;
-	position: relative;
-	text-align: center;
-
-}
 
 
-.charlotte,.logo, .alain{
-	display: inline-block;
-	font-family: 'Julius Sans One', 'Arial', sans-serif;
-	font-size: 40px;
-/*	height: 88px;
-*/	letter-spacing: 6px;
-	line-height: 88px;
-	opacity: 1;
-/*	text-align: center;
-*/	vertical-align: top;
-
-}
 
 
 main{
@@ -186,14 +185,7 @@ h2{
 
 }
 
-/*figcaption{
-	margin: 5rem auto;
-	font-size: 3rem;
-	font-weight: bold;
-	text-shadow: 0 0 5px grey;
-	text-align: center;
-	transform: rotate(-5deg);
-}*/
+
 
 #pause{
 	display : none;
@@ -248,45 +240,51 @@ h2{
 
 
 
-	.reaPart ,.reaPro{
-		width :100%;
-		display: inline-block;
-		text-align: center;
-		padding : 0;
-	}
-	
+.reaPart ,.reaPro{
+	width :100%;
+	display: inline-block;
+	text-align: center;
+	padding : 0;
+}
+
 		/*
-	.grayscale img {
+.grayscale img {
 
-	        filter: grayscale(100%);
-	        transition: .3s ease-in-out;
+        filter: grayscale(100%);
+        transition: .3s ease-in-out;
 
-	}
+}
 
-	.grayscale:hover img {
-	        filter: grayscale(0);
+.grayscale:hover img {
+        filter: grayscale(0);
 
-	}
+}
 
 */
 
-	.reaPart, .reaPro{
-		text-align: center;
-		/*margin: 15% 0 25% 0;*/
-	}
+.center{
+	text-align: center;
+}
 
-	.reaPart img, .reaPro img{
-		width : 100%;
-		text-align: center;
-	}
 
-	.reaPart h6.name, .reaPro h6.name{
-		background-color: black;
-		color:white;
-		margin :-5% auto 0 auto;
-		width :100%;
-		text-align: center;
-	}
+
+.reaPart, .reaPro{
+	text-align: center;
+	/*margin: 15% 0 25% 0;*/
+}
+
+.reaPart img, .reaPro img{
+	width : 100%;
+	text-align: center;
+}
+
+.reaPart h6.name, .reaPro h6.name{
+	background-color: black;
+	color:white;
+	margin :-3% auto 0 auto;
+	width :100%;
+	text-align: center;
+}
 
 
 
@@ -433,33 +431,7 @@ div#linkedin{
 /* Tablette */
 
 @media only screen and (min-width: 768px) {
-	
-	#charlotteAlain{
-		/*display: none;*/
-		position : static;
-		z-index: 9999;
-		/*background : url('../views/img/white.jpg') repeat;*/
-		/*top : -50px;
-		left : 0px;*/
-		/*height : 100%;
-		width : 100%;*/
-/*		text-align: center;
-*/	}
 
-	#anim{
-		text-align: center;
-		height: 100%;
-		display: inline-block;
-
-	}
-/*
-	#charlotteAlain img{
-	 	margin-top: 50vh; 
-	  	transform: translateY(-50%); 
-	  	width: 75%;
-	  	
-	}
-*/
 
 
 
@@ -467,40 +439,40 @@ div#linkedin{
 	.alainDiv{
 		display: inline-block;
 	
-		width: 30%;
+		width: 32%;
 		font-family: 'Julius Sans One', 'Arial', sans-serif;
 		font-size: 40px;
 		text-transform: uppercase;
-		vertical-align: middle;
+
 		text-align: left;
-/*		transform: translateY(-50%); */
-		/*padding-top: 25vh; 	*/
+
 
 	}
 
 		.charlotteDiv{
 		display: inline-block;
 	
-		width: 30%;
+		width: 32%;
 		font-family: 'Julius Sans One', 'Arial', sans-serif;
 		font-size: 40px;
 		text-transform: uppercase;
-		vertical-align: middle;
 		text-align: right;
-/*		transform: translateY(-50%); */
-		/*padding-top: 25vh; 	*/
+
 
 	}
-/*
+
+
+
 	.charlotte{
 		text-align: center;
-
+		transform-origin: 50% 100%:
 	}
 
 	.alain{
-		text-align: center;
+		text-align: left;
+		transform-origin: 50% 100%:
 	}
-*/
+
 
 
 	span.alain {
@@ -512,15 +484,14 @@ div#linkedin{
 
 	@keyframes alain {
 	  	from {
-	  		display: inline-block;
-			margin-left: 150%;
+			margin-left: 100%;
 			opacity: 0.5;		
 
 	 	}
 
 	  	to {
 	    	opacity: 1;
-	    	margin-left: 10%;		
+	    	margin-left: 0%;		
 
 	  	}
 	}
@@ -536,53 +507,19 @@ div#linkedin{
 
 	@keyframes charlotte {
 	  	from {
-	  		display: inline-block;
-			/*text-align: left;*/
-			margin-right: 0%;		
+			margin-right: 100%;		
 			opacity: 0.5;
 	 	}
 
 	  	to {
 	    	opacity: 1;
-	    	margin-right: 30%;		
+	    	margin-right: 0%;		
 
 	  	}
 	}
-	
-/*	#charlotteAlain{
-		animation-delay: 3s;	
-		animation-name: charlotteAlain;
-		animation-duration: 600s;
 
-	}
 
-	@keyframes charlotteAlain {
-	  	from {
-			margin-top: 0vh; 
-	 	
-	 	}
 
-	  	0.5% {
-			
-			margin-top: -40vh; 
-			transform: scale(0.7); 
-
-	  	}
-	  	
-	  	1%{
-	  		height: 67%;
-	  	}
-
-		to {
-	  		height: 67%;
-
-			margin-top: -40vh; 
-			transform: scale(0.7); 
-
-		
-		}
-	}
-*/
 
 
 	nav>ul{
@@ -602,7 +539,6 @@ div#linkedin{
 	}
 	#index div{
 		display: inline-block;
-		width: 20%;
 		text-align: center;
 
 	}
@@ -744,7 +680,7 @@ div#linkedin{
 	.reaPart h6.name, .reaPro h6.name{
 		background-color: black;
 		color:white;
-		margin :-5% auto 0 auto;
+		margin :-3% auto 0 auto;
 		width :100%;
 		text-align: center;
 	}
@@ -759,15 +695,7 @@ div#linkedin{
 		height: 37px;
 	}
 
-	/*.realisationProBigOne{
-		position: absolute;
-
-	}
-
-	.realisationProImg{
-		position: absolute;
-
-		}*/
+	
 
 
 	.fa-chevron-left,.fa-chevron-right{
@@ -786,7 +714,7 @@ div#linkedin{
 		clear: both;
 		display: block;
 		
-}
+	}
 
 	div.bas{
 		display: inline-block;
@@ -810,18 +738,20 @@ div#linkedin{
 
 
     }	
-    #diaporama div img + .grande {  /* On utilise ici le sélecteur de frère adjacent */
-        display:none;           /* pour rendre tous nos agrandissements invisibles. */
+    #diaporama div img + .grande {  
+        display:none;           
     }
+
+
     #diaporama div img:hover + .grande {
-        display:inline;         /* Au survol de la souris, l'image adjacente à la miniature, notre agrandissement, devient visible */
-        position:absolute;      /* et on le place au centre de la page pour qu'il se loge au centre du diaporama. */
+        display:inline;        
+        position:absolute;      
         width:700px;    
         left:33%;
-        margin-left:-150px; /* On centre l'agrandissement par rapport à sa propre largeur. */
+        margin-left:-150px;
         height:520px;
         top:60%;
-        margin-top:-200px;  /* On centre l'agrandissement par rapport à sa propre hauteur. */
+        margin-top:-200px;  
     }
     
     #diaporama img { 
@@ -896,12 +826,11 @@ div#linkedin{
 
 @media only screen and (min-width: 1025px) {
 
-#drop_down_menu ul {
-	    padding: 10px 100px;
+	#drop_down_menu ul {
+		    padding: 10px 100px;
+		}
+	#licence{
+		margin-top: 5rem;
 	}
-
 }
 
-#licence{
-	margin-top: 5rem;
-}
