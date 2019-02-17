@@ -29,16 +29,7 @@ createContact($contact);
 // pre($contact);
 // exit;
 
-	// formulaire envoyé, on récupère tous les champs.
-// $contact['civility'] = (isset($_POST['civility'])) ? Rec($_POST['civility'])     : '';
-// $contact['lastname'] = (isset($_POST['lastname'])) ? Rec($_POST['lastname'])     : '';
-// $contact['firstname'] = (isset($_POST['firstname'])) ? Rec($_POST['firstname'])     : '';
-// $contact['tel'] = (isset($_POST['tel']))? Rec($_POST['tel'])     : '';
-// $contact['email'] = (isset($_POST['email'])) ? Rec($_POST['email'])   : '';
-// $contact['message'] = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
 
-// 	// On va vérifier les variables et l'email ...
-// $contact['email'] = (IsEmail($contact['email'])) ? $contact['email'] : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
 $err_formulaire = false; // sert pour remplir le formulaire en cas d'erreur si besoin
 	
 

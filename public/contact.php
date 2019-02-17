@@ -21,18 +21,6 @@ if (!empty($_POST['submit'])) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   $valid = true;
   $envoi = false;
   // test du nom    
@@ -80,19 +68,8 @@ if (!empty($_POST['submit'])) {
   createContact($contact);  
   }
 }
-  
-  
-  
  
-// $contact['civility'] = $civility;
-// $contact['lastname'] = $nom;
-// $contact['firstname'] = $prenom;
-// $contact['tel'] = $tel;
-// $contact['email'] = $email;
-// $contact['message'] = $message;
 
-//     // On va vérifier les variables et l'email ...
-// $contact['email'] = (IsEmail($contact['email'])) ? $contact['email'] : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
-// createContact($contact);
+
 
 include "../views/contact.phtml";
