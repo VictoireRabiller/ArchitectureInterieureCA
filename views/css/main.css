@@ -213,8 +213,8 @@ h2{
 .realisations img{
 /*	display: inline-block;
 */	width: 100%;
-	max-height: 250px;
-	text-align: center;
+/*	max-height: 250px;
+*/	text-align: center;
 /*	margin: 0 20px;
 */}
 
@@ -649,7 +649,7 @@ div#linkedin{
 		padding : 0;
 	}
 	.reaPart img,.reaPro img{
-		max-height: 210px;
+		max-height: 250px;
 	}
 
 		
@@ -768,8 +768,8 @@ div#linkedin{
 		z-index: 300;
 		float:left;
 		width: 100%;
-		max-width:694px; 
-		height:518px;
+/*		max-width:694px; 
+*/		height:650px;
 		text-align: center;
     }
 
