@@ -4,10 +4,8 @@ include 'bootstrap.php';
 
 $destinataire = 'victoirecretal@hotmail.com';
 	 
-$copie = 'oui'; 
 
-
-$message_envoye = "Votre message nous est bien parvenu !";
+$message_envoye = "Votre message nous est bien parvenu. Merci et à bientôt ! ";
 $message_non_envoye = "L'envoi de la demande de contact a échoué, veuillez réessayer SVP.";
 	 
 $message_erreur_formulaire = "Vous devez d'abord <a href=\"contact.php\">envoyer le formulaire</a>.";
@@ -21,8 +19,7 @@ $contact['tel'] = (isset($_POST['tel']))? Rec($_POST['tel'])     : '';
 $contact['email'] = (isset($_POST['email'])) ? Rec($_POST['email'])   : '';
 $contact['message'] = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
 
-		// On va vérifier les variables et l'email ...
-$contact['email'] = (IsEmail($contact['email'])) ? $contact['email'] : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
+$contact['email'] = (IsEmail($contact['email'])) ? $contact['email'] : ''; 
 
 	 
 createContact($contact);
@@ -48,12 +45,8 @@ if (isset($_POST['Envoyer'])){
 
 		
 
-		if ($copie == 'oui'){
-			$cible = $destinataire.';'.$contact['email'];
-		}else{
-			$cible = $destinataire;
-		};
- 
+		
+	 
 		// Remplacement de certains caractères spéciaux
 		$caracteres_speciaux     = array('&#039;', '&#8217;', '&quot;', '<br>', '<br />', '&lt;', '&gt;', '&amp;', '…',   '&rsquo;', '&lsquo;');
 		$caracteres_remplacement = array("'",      "'",        '"',      '',    '',       '<',    '>',    '&',     '...', '>>',      '<<'     );
@@ -66,21 +59,14 @@ if (isset($_POST['Envoyer'])){
  
 		// Envoi du mail
 		$num_emails = 0;
-		$tmp = explode(';', $cible);
-		foreach($tmp as $email_destinataire)
+		$tmp = explode(';', $destinataire);
+		foreach($tmp as $destinataire)
 		{
-			if (mail($email_destinataire, $contact['message'], $headers))
+			if (mail($destinataire, $contact['message'], $headers))
 				$num_emails++;
 		}
  
-		// if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
-		// {
-		// 	echo '<p>'.$message_envoye.'</p>';
-		// }
-		// else
-		// {
-		// 	echo '<p>'.$message_non_envoye.'</p>';
-		// };
+	
 	}
 	else
 	{
@@ -94,11 +80,4 @@ if (isset($_POST['Envoyer'])){
 
 header('Location: contact.php');
 
-
-
-// 
-// pre($contact);
-// exit;
-
-// header('Location: contact.php');
 

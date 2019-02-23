@@ -1,10 +1,10 @@
 <?php
 
 function getDb (){
-	$user = 'root';
-	$password = 'antony';
+	$user = 'architecpyrootca';
+	$password = 'Romain44';
 	$db =new PDO(
-		'mysql:host=localhost;dbname=CA', 
+		'mysql:host=architecpyrootca.mysql.db;dbname=architecpyrootca', 
 		$user, 
 		$password,
 		array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING)
