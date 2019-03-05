@@ -40,9 +40,12 @@ nav{
 }
 
 
-.container {
-	max-width: 1100px;
+.containerHeader {
+	max-width: 1250px;
 	margin : 0 auto;
+}
+.container {
+	max-width: 1250px;
 }
 
 a{
@@ -413,6 +416,10 @@ textarea{
 
 /******FOOTER******/
 
+footer{
+	margin: 0 auto;
+	text-align: center;
+}
 
 
 div#facebook{
@@ -680,7 +687,7 @@ div#linkedin{
 	.reaPart h6.name, .reaPro h6.name{
 		background-color: black;
 		color:white;
-		margin :-3% auto 0 auto;
+		margin :-2% auto 0 auto;
 		width :100%;
 		text-align: center;
 	}
@@ -769,7 +776,7 @@ div#linkedin{
 		float:left;
 		width: 100%;
 /*		max-width:694px; 
-*/		height:650px;
+*/		height:700px;
 		text-align: center;
     }
 
@@ -781,7 +788,9 @@ div#linkedin{
 		z-index: 2;
 	}
 
-
+	.alignCenter{
+		text-align: center;
+	}
 
 
 
