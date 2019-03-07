@@ -40,12 +40,14 @@ nav{
 }
 
 
-.container {
-	max-width: 1100px;
+.containerHeader {
+	max-width: 1250px;
 	margin : 0 auto;
 }
 
-
+.container {
+	max-width: 1250px;
+}
 
 
 a{
@@ -415,7 +417,10 @@ textarea{
 }
 
 /******FOOTER******/
-
+footer{
+	margin: 0 auto;
+	text-align: center;
+}
 
 div#facebook{
 	text-align: center;
@@ -771,7 +776,7 @@ div#linkedin{
 		float:left;
 		width: 100%;
 		/*max-width:694px; */
-		height:650px;
+		height:700px;
 		text-align: center;
     }
 
@@ -783,7 +788,9 @@ div#linkedin{
 		z-index: 2;
 	}
 
-
+	.alignCenter{
+		text-align: center;
+	}
 
 
 

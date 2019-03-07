@@ -2,7 +2,7 @@
 include 'header.phtml'; 
 ?>
 
-<main>
+<main class="container">
 
 <form method="post" action="contact.php">
 	 
@@ -48,6 +48,8 @@ include 'header.phtml';
 			</li>
 		</ul>
 	</fieldset>
+	<div class="g-recaptcha" data-sitekey="#############"> </div>
+	<br/>
 	<input class="button " type="submit" name="submit" value="Envoyer">
 	<input class="button button-cancel" type="reset" value="Annuler"/>
 	<!-- <a class="button button-cancel" href="contact.php">Annuler</a>
@@ -66,7 +68,9 @@ include 'header.phtml';
 	</article>
 </section>
 </main>
-
+<script src="../views/js/main.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer> </script>
 
 <?php 
 include 'footer.phtml'; 
