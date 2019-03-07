@@ -1,19 +1,9 @@
+
 <?php
 include 'bootstrap.php';
-require('../views/vendor/reCaptcha/autoload.php');
-if(isset($_POST['submit'])){ 
-  if(isset($_POST['gRecaptchaResponse'])){ 
-    $recaptcha = new \ReCaptcha\ReCaptcha('6LeEI5UUAAAAALAIuyPqRroMoNj2Zv6K8hfJ7Eth');
-    $resp = $recaptcha->verify($_POST['$gRecaptchaResponse']);
-    if ($resp->isSuccess()) {
-        // Verified!
-    } else {
-        $errors = $resp->getErrorCodes();
-    }
-  }
-}
+
 /* D'abord on fixe la valeur par défaut des messages d'erreur et des variables des inputs */
-  $erreurnom = $erreuremail = $erreurmessage = $messageenvoi = $civility = $nom = $prenom =$tel = $email = $message =  '';
+$erreurnom = $erreuremail = $erreurmessage = $messageenvoi = $civility = $nom = $prenom =$tel = $email = $message =  '';
 /* Ensuite on vérifie si le formulaire a été soumis et on valide les valeurs récupérées */
 if (!empty($_POST['submit'])) {
   

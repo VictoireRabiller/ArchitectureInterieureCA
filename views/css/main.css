@@ -41,13 +41,12 @@ nav{
 
 
 .container {
-	max-width: 1250px;
-}
-
-.containerHeader {
-	max-width: 1250px;
+	max-width: 1100px;
 	margin : 0 auto;
 }
+
+
+
 
 a{
 	text-decoration: none;
@@ -217,8 +216,8 @@ h2{
 .realisations img{
 /*	display: inline-block;
 */	width: 100%;
-	max-height: 250px;
-	text-align: center;
+/*	max-height: 250px;
+*/	text-align: center;
 /*	margin: 0 20px;
 */}
 
@@ -416,10 +415,6 @@ textarea{
 }
 
 /******FOOTER******/
-footer{
-	margin: 0 auto;
-	text-align: center;
-}
 
 
 div#facebook{
@@ -656,7 +651,7 @@ div#linkedin{
 		padding : 0;
 	}
 	.reaPart img,.reaPro img{
-		max-height: 210px;
+		max-height: 250px;
 	}
 
 		
@@ -776,7 +771,7 @@ div#linkedin{
 		float:left;
 		width: 100%;
 		/*max-width:694px; */
-		height:700px;
+		height:650px;
 		text-align: center;
     }
 
@@ -787,14 +782,6 @@ div#linkedin{
 		display: contents;	
 		z-index: 2;
 	}
-
-
-
-.alignCenter{
-		text-align: center;
-	}
-
-
 
 
 

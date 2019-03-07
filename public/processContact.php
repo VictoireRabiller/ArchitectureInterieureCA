@@ -1,26 +1,6 @@
 <?php
 include 'bootstrap.php';
-// // Ma clé privée
-//  $secret = "6LckIJQUAAAAAEnA_iZCwm6eX21MrCzz467BZuUm";
-//  // Paramètre renvoyé par le recaptcha
-//  $response = $_POST['g-recaptcha-response'];
-//  // On récupère l'IP de l'utilisateur
-//  $remoteip = $_SERVER['REMOTE_ADDR'];
-  
-//  $api_url = "https://www.google.com/recaptcha/api/siteverify?secret=" 
-//      . $secret
-//      . "&response=" . $response
-//      . "&remoteip=" . $remoteip ;
-  
-//  $decode = json_decode(file_get_contents($api_url), true);
-  
-//  if ($decode['success'] == true) {
-//    // C'est un humain
-//  }
-  
-//  else {
-//    // C'est un robot ou le code de vérification est incorrecte
-//  }
+
 $destinataire = 'victoirecretal@hotmail.com';
 	 
 $message_envoye = "Votre message nous est bien parvenu. Merci et à bientôt ! ";
@@ -35,8 +15,7 @@ $contact['tel'] = (isset($_POST['tel']))? Rec($_POST['tel'])     : '';
 $contact['email'] = (isset($_POST['email'])) ? Rec($_POST['email'])   : '';
 $contact['message'] = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
 $contact['email'] = (IsEmail($contact['email'])) ? $contact['email'] : ''; 
- $addition = (isset($_POST['addition'])) ? Rec($_POST['addition']) : '';
-	 
+
 createContact($contact);
 // pre($contact);
 // exit;
