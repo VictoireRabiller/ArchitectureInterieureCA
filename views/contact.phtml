@@ -35,21 +35,25 @@ include 'header.phtml';
 			</li>
 			<li class="register">
 				<label for="tel">Tel : </label>
-				<input type="text" name="tel" id="tel" value="<?php echo $tel ?>">
+				<input type="text" name="tel" id="tel" value="<?php echo $tel ?>"><?php echo $erreurtel ?>
 			</li>
 			<li class="register">
 				<label for="email">Email : </label>
 				<input type="text" name="email" id="email"value="<?php echo $email ?>"><?php echo $erreuremail ?>
 			</li>
 			<li class="register">
-				<label for="message">Votre Message : </label>
-				<textarea name="message" id="message" cols="20" rows="15"
-				></textarea><?php echo $erreurmessage ?>
+				<label for="messageCA">Votre Message : </label>
+				<textarea name="messageCA" id="messageCA" cols="20" rows="15"
+				></textarea><?php echo $erreurmessageCA ?>
 			</li>
+			<li><input style="display:none;" type="text" id="test1" name="test1" value="hello">
+
+<input style="display:none;" type="text" id="test2" name="test2" value="">
+
+<input style="display:none;" type="text" id="email2" name="email2" value=""></li>
 		</ul>
 	</fieldset>
-	<div class="g-recaptcha" data-sitekey="#############"> </div>
-	<br/>
+	
 	<input class="button " type="submit" name="submit" value="Envoyer">
 	<input class="button button-cancel" type="reset" value="Annuler"/>
 	<!-- <a class="button button-cancel" href="contact.php">Annuler</a>

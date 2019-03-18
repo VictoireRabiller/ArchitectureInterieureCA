@@ -40,7 +40,7 @@ function createContact($contact){
 	$sql = "
 			INSERT INTO contact
 			(id, civility, lastname, firstname,  tel, email, message)
-			VALUES (NULL, :civility, :lastname, :firstname, :tel, :email, :message)
+			VALUES (NULL, :civility, :lastname, :firstname, :tel, :email, :messageCA)
 			";
 	
 	
