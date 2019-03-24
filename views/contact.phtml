@@ -25,32 +25,32 @@ include 'header.phtml';
 			
 			</li>
 			<li class="register">
-				<label for="lastname">Nom : </label>
+				<label for="lastname">Nom*: </label>
 				<input type="text" name="lastname" id="lastname" value="<?php echo $nom ?>"><?php echo $erreurnom ?>
 			
 			</li>
 			<li class="register">
-				<label for="firstname">Prénom : </label>
+				<label for="firstname">Prénom: </label>
 				<input type="text" name="firstname" id="firstname"  value="<?php echo $prenom ?>">
 			</li>
 			<li class="register">
-				<label for="tel">Tel : </label>
+				<label for="tel">Tel*: </label>
 				<input type="text" name="tel" id="tel" value="<?php echo $tel ?>"><?php echo $erreurtel ?>
 			</li>
 			<li class="register">
-				<label for="email">Email : </label>
+				<label for="email">Email*: </label>
 				<input type="text" name="email" id="email"value="<?php echo $email ?>"><?php echo $erreuremail ?>
 			</li>
 			<li class="register">
-				<label for="messageCA">Votre Message : </label>
+				<label for="messageCA">Votre Message*: </label>
 				<textarea name="messageCA" id="messageCA" cols="20" rows="15"
 				></textarea><?php echo $erreurmessageCA ?>
 			</li>
-			<li><input style="display:none;" type="text" id="test1" name="test1" value="hello">
+			<li><input style="display:none;" type="text" id="test1" name="test1" value="hello"></li>
 
-<input style="display:none;" type="text" id="test2" name="test2" value="">
+			<li><input style="display:none;" type="text" id="test2" name="test2" value=""></li>
 
-<input style="display:none;" type="text" id="email2" name="email2" value=""></li>
+			<li><input style="display:none;" type="text" id="email2" name="email2" value=""></li>
 		</ul>
 	</fieldset>
 	
@@ -60,7 +60,7 @@ include 'header.phtml';
  -->		
 
 </form>
-
+<p>*:obligatoire</p>
 <section>
 	<h3>Me contacter par mail ou par téléphone :</h3>
 
@@ -73,9 +73,7 @@ include 'header.phtml';
 </section>
 </main>
 <script src="../views/js/main.js"></script>
-		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer> </script>
-
+	
 <?php 
 include 'footer.phtml'; 
 ?>
