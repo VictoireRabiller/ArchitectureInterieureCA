@@ -1,0 +1,4 @@
+Options +FollowSymlinks 
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^www.architecturedinterieur-ca.com$
+RewriteRule ^(.*) https://architecturedinterieur-ca.com/$1 [QSA,L,R=301]
