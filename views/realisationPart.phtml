@@ -1,183 +1,311 @@
 <?php 
 include 'header.phtml'; 
 ?>
-<main class="container">
+<main class="container"> 
+	<section>	
+	 <!-- Slideshow container -->
+		<div class="slideshow-container">
 
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade center">
+		    <div class="numbertext"></div>
+		    <img class="center" src="<?= $realisationPart["img1"] ?>"/>
+		    <div class="text"></div>
+		  </div>
 
-	<section id="heightRea">
-		<div id="diaporama">
-			<!-- <div>
-				<i class="fas fa-chevron-left"></i>
-			</div> -->
-			<div class="centre" >
-				<h4 class="imageReaHover">Touchez une image miniature pour qu'elle s'agrandisse</h4>
-			</div>
-			<!-- <div>
-				<i class="fas fa-chevron-right"></i>
-			</div> -->
-		
-			<div class="bas" >
-				
-				<div class="grayscale center">
-					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img1"] ?>"/> <img class="grande" src="<?= $realisationPart["img1"] ?>"/> 
-				</div>
-				<div class="grayscale center">
-					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img2"] ?>"/> 
-					<img class="grande" src="<?= $realisationPart["img2"] ?>"/> 
-				</div>
-				<div class="grayscale center">
-					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img3"] ?>"/><img class="grande" src="<?= $realisationPart["img3"] ?>"/>
-				</div> 
-				<div class="grayscale center">
-					<img class="realisationPartImg hoverBigView" src="<?= $realisationPart["img4"] ?>"/><img class="grande" src="<?= $realisationPart["img4"] ?>"/>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img5"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img5'] ?>"/><img class="grande" src="<?= $realisationPart['img5'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img6"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img6'] ?>"/><img class="grande" src="<?= $realisationPart['img6'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img7"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img7'] ?>"/><img class="grande" src="<?= $realisationPart['img7'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img8"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img8'] ?>"/><img class="grande" src="<?= $realisationPart['img8'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img9"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img9'] ?>"/><img class="grande" src="<?= $realisationPart['img9'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img10"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img10'] ?>"/><img class="grande" src="<?= $realisationPart['img10'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img11"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img11'] ?>"/><img class="grande" src="<?= $realisationPart['img11'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img12"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img12'] ?>"/><img class="grande" src="<?= $realisationPart['img12'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img13"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img13'] ?>"/><img class="grande" src="<?= $realisationPart['img13'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img14"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img14'] ?>"/><img class="grande" src="<?= $realisationPart['img14'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-			
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img15"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img15'] ?>"/><img class="grande" src="<?= $realisationPart['img15'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img16"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img16'] ?>"/><img class="grande" src="<?= $realisationPart['img16'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img17"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img17'] ?>"/><img class="grande" src="<?= $realisationPart['img17'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				<div class="grayscale center">
-				<?php 
-					if ($realisationPart["img18"]!= null){
-				?>
-						<img class="realisationPartImg hoverBigView" src="<?= $realisationPart['img18'] ?>"/><img class="grande" src="<?= $realisationPart['img18'] ?>"/>
-				<?php
-					}
-				?>
-				</div>
-				
-			</div>
+		  <div class="mySlides fade center">
+		    <div class="numbertext"></div>
+		    <img class="center" src="<?= $realisationPart["img2"] ?>"/>
+		    <div class="text"></div>
+		  </div>
 
+		  <div class="mySlides fade center">
+		    <div class="numbertext"></div>
+		     <img src="<?= $realisationPart["img3"] ?>"/>
+		    <div class="text"></div>
+		  </div>
+  		 
+		  <div class="mySlides fade center">
+		    <div class="numbertext"></div>
+		     <img src="<?= $realisationPart["img4"] ?>"/>
+		    <div class="text"></div>
+		  </div>
+	  	<?php 
+			if ($realisationPart["img5"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img5"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img6"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img6"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img7"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img7"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img8"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img8"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img9"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img9"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img10"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img10"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img11"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img11"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img12"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img12"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img13"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img13"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img14"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img14"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img15"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img15"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img16"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img16"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img17"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img17"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img18"]!= null){
+		?>
+			<div class="mySlides fade center">
+		   		<div class="numbertext"></div>
+		   	  	<img src="<?= $realisationPart["img18"] ?>"/>
+		    	<div class="text"></div>
+		  	</div>
+		<?php
+			}
+		?>
 
-			<div > 
-				<h5 class="name"><?= $realisationPart["name"] ?></h5>
-				<p class="description"><?= $realisationPart["description"] ?></p>
-				<p class="description"><?= $realisationPart["description2"] ?></p>
-				<p class="description"><?= $realisationPart["description3"] ?></p>
-			</div>
-			<div class="clear">
-			
-			</div>
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
+		<br>
 
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		  <?php 
+			if ($realisationPart["img5"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		<?php
+			}
+		?>
+		  <?php 
+			if ($realisationPart["img6"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(6)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img7"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(7)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img8"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(8)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img9"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(9)"></span>
+		<?php
+			}
+		?>
+		 <?php 
+			if ($realisationPart["img10"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(10)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img11"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(11)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img12"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(12)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img13"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(13)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img14"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(14)"></span>
+		<?php
+			}
+		?>
+		 <?php 
+			if ($realisationPart["img15"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(15)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img16"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(16)"></span>
+		<?php
+			}
+		?>
+		<?php 
+			if ($realisationPart["img17"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(17)"></span>
+		<?php
+			}
+		?>
+		 <?php 
+			if ($realisationPart["img18"]!= null){
+		?>
+			<span class="dot" onclick="currentSlide(18)"></span>
+		<?php
+			}
+		?>
+		  
+		</div> 
+
+		<div > 
+			<h5 class="name"><?= $realisationPart["name"] ?></h5>
+			<p class="description"><?= $realisationPart["description"] ?></p>
+			<p class="description"><?= $realisationPart["description2"] ?></p>
+			<p class="description"><?= $realisationPart["description3"] ?></p>
+		</div>
 	</section>
-	
-
 </main>
-
 <?php 
 include 'footer.phtml'; 
 ?>
