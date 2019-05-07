@@ -1,0 +1,34 @@
+<?php 
+include 'header.phtml'; 
+?>
+
+<main class="container">
+
+<form method="post" action="contact.php" id="formContact">
+	<fieldset>
+		<legend><i class="fa fa-envelope"></i> Contact </legend>
+		
+	</fieldset>
+	
+	<input class="button " type="submit" name="submit" value="Envoyer">
+	<input class="button button-cancel" type="reset" value="Annuler"/>
+	<!-- <a class="button button-cancel" href="contact.php">Annuler</a>
+ -->		
+
+</form>
+<p>*:obligatoire</p>
+<section>
+	<h3>Me contacter par mail ou par téléphone :</h3>
+
+	<article class="mailTel">
+		<a href="mailto:charlotte_alain@hotmail.com">charlotte_alain@hotmail.com</a> 
+	</article>
+	<article class="mailTel">
+		<a href="tel:+33661773219">06 61 77 32 19</a>
+	</article>
+</section>
+</main>
+
+<?php 
+include 'footer.phtml'; 
+?>

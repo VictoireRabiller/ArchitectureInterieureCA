@@ -25,22 +25,22 @@ if (!empty($_POST['submit'])) {
     // test du nom    
     if (empty($nom)) {
       $valid = false;
-      $erreurnom = '<br><span class="error">Vous n\'avez pas mis votre nom</span><br>';
+      $erreurnom = '<p><span class="error">Vous n\'avez pas mis votre nom</span></p>';
     }
 
     if (empty($tel)) {
       $valid = false;
-      $erreurtel = '<br><span class="error">Vous n\'avez pas noté votre numéro de téléphone</span><br>';
+      $erreurtel = '<p><span class="error">Vous n\'avez pas noté votre numéro de téléphone</span></p>';
     }
     // Test format e-mail    
     if (!preg_match("/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/i", $email)) {
       $valid = false;    
-      $erreuremail = '<br><span class="error">Email non valide</span><br>';
+      $erreuremail = '<p><span class="error">Email non valide</span></p>';
     }
     // Test message
     if (empty($messageCA)) {
       $valid = false;
-      $erreurmessageCA = '<br><span class="error">Vous n\'avez pas mis votre message</span><br>';
+      $erreurmessageCA = '<p><span class="error">Vous n\'avez pas mis votre message</span></p>';
     }
   
     if ($valid) {
@@ -59,7 +59,7 @@ if (!empty($_POST['submit'])) {
       // pre($contact);
       // exit;
     }else{
-      $messagenonenvoi =  'Désolé, une erreur est survenue lors de l\'envoi du message ! Veuillez essayer de nouveau.<br>';
+      $messagenonenvoi =  '<p>Désolé, une erreur est survenue lors de l\'envoi du message ! Veuillez essayer de nouveau.</p>';
     }
 
     $mail = 'victoirecretal@hotmail.com'; // Déclaration de l'adresse de destination.
@@ -73,7 +73,7 @@ if (!empty($_POST['submit'])) {
     }
     //=====Déclaration des messages au format texte et au format HTML.
     $message_txt = "Salut à tous, voici un e-mail envoyé par un script PHP.";
-    $message_html = "<html><head></head><body><b>Salut à tous</b>, voici un e-mail envoyé par un <i>script PHP</i>.</body></html>";
+    $message_html = " voici un e-mail envoyé par un script PHP";
     //==========
      
     //=====Création de la boundary
