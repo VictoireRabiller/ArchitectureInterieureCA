@@ -45,21 +45,24 @@ if (isset($_POST['submit'])) {
   
     if ($valid) {
     	
-    	$to = "victoirecretal@hotmail.com";
+    	$to = "charlotte_alain@hotmail.com";
 
     	$header = "MIME-Version: 1.0"."\r\n";
     	$header .= "Content-type: text/html; charset=utf-8"."\r\n";
-    	$header .= "To : vic < ".$to.">"."\r\n";
-    	$header .= "From : ". $prenom.$nom." <".$email.">"."\r\n";
+    	$header .= "To : Charlotte Alain < ".$to.">"."\r\n";
+    	$header .= "From : ". $prenom." ".$nom." <".$email.">"."\r\n";
 
 
-    	$subject = "site Charlotte";
+    	$subject = "Demande de contact architecturedinterieur-ca.com";
     	$message = "<html>
 	        			<head>
 	    					<title>Contact</title>
 	    				</head>
 	    				<body>
-	    					<p>".$civility." ".$prenom." ".$nom."; tel : ".$tel."; email :".$email."; message : ".$messageCA."</p>
+	    					<p>".$civility." ".$prenom." ".$nom."</p>
+	    					<p> tel : ".$tel."</p>
+	    					<p>  email :".$email."</p>
+	    					<p>  message : ".$messageCA."</p>
 	    				</body>
     				</html>";
     	
