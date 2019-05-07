@@ -1,10 +1,10 @@
 <?php
 
 function getDb (){
-	$user = 'architecpyrootca';
-	$password = 'Romain44';
+	$user = 'root';
+	$password = 'antony';
 	$db =new PDO(
-		'mysql:host=architecpyrootca.mysql.db;dbname=architecpyrootca', 
+		'mysql:host=localhost;dbname=CA', 
 		$user, 
 		$password,
 		array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING)
@@ -12,7 +12,6 @@ function getDb (){
 	$db->exec('SET NAMES UTF8');
 	return $db;
 }
-
 
 
 function Rec($text){

@@ -5,11 +5,18 @@ include 'header.phtml';
 <main class="container">
 
 <form method="post" action="contact.php" id="formContact">
-	 
-<?php if (!empty($_POST['submit'])): echo $messageenvoi ;?>
 
-<?php endif; ?>
+<?php if (!empty($_POST['submit'])) :
 
+	if (mail($to, $subject, $message, $header)): 
+
+		echo $messageenvoi ;
+	
+	else:
+    	echo $messagenonenvoi;
+	endif;
+endif;
+?> 
 
 	<fieldset>
 		<legend><i class="fa fa-envelope"></i> Contact </legend>
@@ -26,12 +33,12 @@ include 'header.phtml';
 			</li>
 			<li class="register">
 				<label for="lastname">Nom*: </label>
-				<input type="text" name="lastname" id="lastname" value="<?php echo $nom ?>"><?php echo $erreurnom ?>
+				<input type="text" name="lastname" id="lastname" value="<?php echo $lastname ?>"><?php echo $erreurnom ?>
 			
 			</li>
 			<li class="register">
 				<label for="firstname">Prénom: </label>
-				<input type="text" name="firstname" id="firstname"  value="<?php echo $prenom ?>">
+				<input type="text" name="firstname" id="firstname"  value="<?php echo $firstname ?>">
 			</li>
 			<li class="register">
 				<label for="tel">Tel*: </label>
@@ -48,9 +55,9 @@ include 'header.phtml';
 			</li>
 			<li><input style="display:none;" type="text" id="test1" name="test1" value="hello"></li>
 
-			<li><input style="display:none;" type="text" id="test2" name="test2" value=""></li>
+			<li><input style="display:none;" type="text" id="test2" name="test2" value=" "></li>
 
-			<li><input style="display:none;" type="text" id="email2" name="email2" value=""></li>
+			<li><input style="display:none;" type="text" id="email2" name="email2" value=" "></li>
 		</ul>
 	</fieldset>
 	
