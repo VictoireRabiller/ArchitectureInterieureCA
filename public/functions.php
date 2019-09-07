@@ -14,22 +14,6 @@ function getDb (){
 }
 
 
-// function getDb (){
-// 	$user = 'root';
-// 	$password = 'antony';
-// 	$db =new PDO(
-// 		'mysql:host=localhost;dbname=CA', 
-// 		$user, 
-// 		$password,
-// 		array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING)
-// 		);
-// 	$db->exec('SET NAMES UTF8');
-// 	return $db;
-// }
-
-
-
-
 
 function Rec($text){
 		$text = htmlspecialchars(trim($text), ENT_QUOTES);
@@ -80,15 +64,13 @@ function getReaListPro(){
 function getOneReaPro($id){
 	$db=getDb();
 
-	$sql = "SELECT * FROM `realisationsPro` WHERE id = :id";
+	$sql = "SELECT * FROM `realisationsPro` WHERE id = '$id' ";
 	$statement = $db->prepare($sql);
-	$statement->execute(['id' => $id]);
+	$statement->execute();
 	$realisationPro = $statement->fetch(\PDO::FETCH_ASSOC);
 
 	return $realisationPro;
 }
-
-
 
 function getReaListPart(){
 	$db=getDb();
@@ -103,9 +85,9 @@ function getReaListPart(){
 function getOneReaPart($id){
 	$db=getDb();
 
-	$sql = "SELECT * FROM `realisationsPart` WHERE id = :id";
+	$sql = "SELECT * FROM `realisationsPart` WHERE id = '$id' ";
 	$statement = $db->prepare($sql);
-	$statement->execute(['id' => $id]);
+	$statement->execute();
 	$realisationPart = $statement->fetch(\PDO::FETCH_ASSOC);
 
 	return $realisationPart;
