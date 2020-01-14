@@ -2,7 +2,7 @@
 
 function getDb (){
 	$user = 'architecpyrootca';
-	$password = 'Romain44';
+	$password = 'xxxxxx';
 	$db =new PDO(
 		'mysql:host=architecpyrootca.mysql.db;dbname=architecpyrootca', 
 		$user, 
